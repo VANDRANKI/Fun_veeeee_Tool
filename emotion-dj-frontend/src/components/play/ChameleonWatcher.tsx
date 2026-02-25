@@ -123,7 +123,7 @@ export default function ChameleonWatcher() {
           <ellipse key={`s3${i}`} cx={x} cy={126} rx="6"   ry="4"   fill="url(#g-scale)" />
         ))}
 
-        {/* Gold bioluminescent spots — glow layer */}
+        {/* Gold bioluminescent spots - glow layer */}
         {[110,127,144,161,176].map((x,i) => (
           <circle key={`sg${i}`} cx={x} cy={106} r="6" fill="#fbbf24" opacity="0.25" filter="url(#f-blur2)" />
         ))}
@@ -178,7 +178,7 @@ export default function ChameleonWatcher() {
         <path d={`M${EYE.x-16} ${EYE.y-4} Q${EYE.x} ${EYE.y-21} ${EYE.x+16} ${EYE.y-4}`} fill="#0d3d1e" />
         {/* Eyeball */}
         <circle cx={EYE.x} cy={EYE.y} r="15" fill="#f0fdf4" />
-        {/* Iris — moves with cursor */}
+        {/* Iris - moves with cursor */}
         <circle cx={ex} cy={ey} r="10" fill="url(#g-iris)" />
         {/* Pupil */}
         <ellipse cx={ex} cy={ey} rx="5" ry="5.5" fill="#000" />

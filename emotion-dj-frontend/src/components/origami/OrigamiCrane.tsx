@@ -12,7 +12,7 @@ export default function OrigamiCrane({ size = 220 }: { size?: number }) {
       animate={{ y: [0, -10, 0] }}
       transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
     >
-      {/* Body — central diamond */}
+      {/* Body - central diamond */}
       <polygon points="100,55 148,100 100,148 52,100" fill="#FFE066" stroke="#FF8C42" strokeWidth="1" />
 
       {/* Body shadow face */}

@@ -54,7 +54,7 @@ export default function OrigamiCat({ size = 220 }: { size?: number }) {
       />
       <polygon points="130,62 138,35 112,60" fill="#D4C5B0" opacity="0.5" />
 
-      {/* Face — calm neutral */}
+      {/* Face - calm neutral */}
       {/* Eyes (half closed) */}
       <ellipse cx="83" cy="74" rx="9" ry="7" fill="#D4C5B0" />
       <ellipse cx="83" cy="76" rx="9" ry="4" fill="#0a0a0a" />
@@ -66,7 +66,7 @@ export default function OrigamiCat({ size = 220 }: { size?: number }) {
       {/* Nose */}
       <polygon points="97,84 103,84 100,88" fill="#D4C5B0" />
 
-      {/* Mouth — tiny neutral */}
+      {/* Mouth - tiny neutral */}
       <line x1="100" y1="88" x2="96" y2="92" stroke="#BEBEBE" strokeWidth="1.2" strokeLinecap="round" />
       <line x1="100" y1="88" x2="104" y2="92" stroke="#BEBEBE" strokeWidth="1.2" strokeLinecap="round" />
 

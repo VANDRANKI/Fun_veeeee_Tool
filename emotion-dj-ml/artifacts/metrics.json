@@ -1,16 +1,42 @@
 {
   "model": "j-hartmann/emotion-english-distilroberta-base",
-  "dataset": "GoEmotions validation split (mapped to 7 classes)",
-  "overall_accuracy": 0.654,
-  "macro_f1": 0.612,
+  "overall_accuracy": 0.44,
+  "macro_f1": 0.4421,
   "per_class": {
-    "joy":     { "precision": 0.75, "recall": 0.78, "f1": 0.76 },
-    "anger":   { "precision": 0.68, "recall": 0.71, "f1": 0.69 },
-    "fear":    { "precision": 0.67, "recall": 0.61, "f1": 0.64 },
-    "sadness": { "precision": 0.66, "recall": 0.64, "f1": 0.65 },
-    "neutral": { "precision": 0.61, "recall": 0.65, "f1": 0.63 },
-    "disgust": { "precision": 0.59, "recall": 0.52, "f1": 0.55 },
-    "surprise":{ "precision": 0.57, "recall": 0.54, "f1": 0.55 }
-  },
-  "notes": "Baseline evaluation with off-the-shelf pretrained model. Fine-tuning on GoEmotions can improve disgust/surprise F1 significantly."
+    "anger": {
+      "precision": 0.338,
+      "recall": 0.24,
+      "f1": 0.2807
+    },
+    "disgust": {
+      "precision": 0.4462,
+      "recall": 0.705,
+      "f1": 0.5465
+    },
+    "fear": {
+      "precision": 0.7899,
+      "recall": 0.545,
+      "f1": 0.645
+    },
+    "joy": {
+      "precision": 0.732,
+      "recall": 0.355,
+      "f1": 0.4781
+    },
+    "neutral": {
+      "precision": 0.2706,
+      "recall": 0.59,
+      "f1": 0.3711
+    },
+    "sadness": {
+      "precision": 0.582,
+      "recall": 0.355,
+      "f1": 0.441
+    },
+    "surprise": {
+      "precision": 0.3893,
+      "recall": 0.29,
+      "f1": 0.3324
+    }
+  }
 }

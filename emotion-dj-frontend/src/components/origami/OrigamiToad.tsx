@@ -40,7 +40,7 @@ export default function OrigamiToad({ size = 220 }: { size?: number }) {
       {/* Grumpy brow right */}
       <line x1="116" y1="46" x2="140" y2="50" stroke="#3D5935" strokeWidth="3" strokeLinecap="round" />
 
-      {/* Mouth — deep frown */}
+      {/* Mouth - deep frown */}
       <path d="M 72,82 Q 100,72 128,82" fill="none" stroke="#3D5935" strokeWidth="3" strokeLinecap="round" />
 
       {/* Nostril dots */}
@@ -60,7 +60,7 @@ export default function OrigamiToad({ size = 220 }: { size?: number }) {
       <polygon points="30,160 5,155 20,175 30,165" fill="#5A7A50" stroke="#82C271" strokeWidth="0.5" />
       <polygon points="170,160 195,155 180,175 170,165" fill="#5A7A50" stroke="#82C271" strokeWidth="0.5" />
 
-      {/* Annoyed expression indicator — occasional twitch */}
+      {/* Annoyed expression indicator - occasional twitch */}
       <motion.g
         animate={{ rotate: [-5, 5, -5], y: [0, -2, 0] }}
         style={{ transformOrigin: "100px 80px" }}

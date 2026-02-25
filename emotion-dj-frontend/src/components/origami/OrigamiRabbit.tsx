@@ -43,7 +43,7 @@ export default function OrigamiRabbit({ size = 220 }: { size?: number }) {
       <polygon points="62,118 138,118 142,85 100,70 58,85" fill="#00FFFF" stroke="#FF00FF" strokeWidth="1" />
       <polygon points="62,118 138,118 142,85 100,96" fill="#0099CC" stroke="none" opacity="0.5" />
 
-      {/* Eyes — massive surprised */}
+      {/* Eyes - massive surprised */}
       <circle cx="80" cy="96" r="14" fill="white" />
       <circle cx="80" cy="96" r="8" fill="#FF00FF" />
       <circle cx="80" cy="96" r="4" fill="#0d0020" />
@@ -56,7 +56,7 @@ export default function OrigamiRabbit({ size = 220 }: { size?: number }) {
       {/* Nose */}
       <polygon points="97,109 103,109 100,114" fill="#FF00FF" />
 
-      {/* Mouth — wide O of surprise */}
+      {/* Mouth - wide O of surprise */}
       <motion.ellipse
         cx="100" cy="116" rx="8" ry="5"
         fill="#0d0020"

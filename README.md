@@ -91,6 +91,6 @@ Artifacts saved to `emotion-dj-ml/artifacts/`.
 | Route                 | Description                              |
 |-----------------------|------------------------------------------|
 | `/`                   | Landing page, hero + how it works       |
-| `/play`               | Main emotion DJ playground               |
+| `/play`               | Main Vibe Canvas playground               |
 | `/behind-the-scenes`  | Dataset, model, and evaluation details   |
 | `/about`              | Project story, tech stack, architecture  |

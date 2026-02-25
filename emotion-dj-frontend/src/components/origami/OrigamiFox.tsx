@@ -54,7 +54,7 @@ export default function OrigamiFox({ size = 220 }: { size?: number }) {
       <polygon points="85,75 115,75 110,90 90,90" fill="#7D3C98" stroke="#9B59B6" strokeWidth="0.5" />
       <polygon points="95,88 105,88 100,95" fill="#9B59B6" />
 
-      {/* Eyes — wide fearful */}
+      {/* Eyes - wide fearful */}
       <ellipse cx="82" cy="70" rx="8" ry="9" fill="#00FF88" />
       <ellipse cx="82" cy="70" rx="4" ry="5" fill="#060011" />
       <circle cx="80" cy="68" r="1.5" fill="white" opacity="0.9" />

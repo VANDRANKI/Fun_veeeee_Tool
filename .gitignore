@@ -21,7 +21,7 @@ build/
 logs/
 *.log
 
-# ML artifacts / cache
+# ML artifacts and cache
 emotion-dj-backend/app/model_cache/
 *.h5
 *.pkl
