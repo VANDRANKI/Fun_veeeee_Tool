@@ -1,5 +1,4 @@
 import time
-from transformers import pipeline
 
 TAXONOMY = ["anger", "disgust", "fear", "joy", "neutral", "sadness", "surprise"]
 MODEL_NAME = "j-hartmann/emotion-english-distilroberta-base"
@@ -10,6 +9,9 @@ _classifier = None
 def load_model():
     global _classifier
     if _classifier is None:
+        # Imported here so the module (and the tests) load without pulling in torch.
+        from transformers import pipeline
+
         print(f"Loading model: {MODEL_NAME}")
         _classifier = pipeline(
             "text-classification",
