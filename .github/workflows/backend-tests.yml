@@ -1,0 +1,37 @@
+name: Backend tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "emotion-dj-backend/**"
+      - ".github/workflows/backend-tests.yml"
+  pull_request:
+    paths:
+      - "emotion-dj-backend/**"
+      - ".github/workflows/backend-tests.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: emotion-dj-backend
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: emotion-dj-backend/requirements.txt
+
+      # The model is stubbed in the tests, so torch and transformers are left out.
+      - name: Install test dependencies
+        run: pip install fastapi==0.111.0 pydantic==2.7.4 httpx pytest
+
+      - name: Run tests
+        run: python -m pytest -q
